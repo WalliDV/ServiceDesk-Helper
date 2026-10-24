@@ -1,0 +1,42 @@
+[
+  {
+    "Name": "7-Zip",
+    "DetectionName": "7-Zip",
+    "Installer": "Installers\\7Zip\\7zip-installer.exe",
+    "Arguments": "/S",
+    "CleanupFolders": [
+      "C:\\Program Files\\7-Zip"
+    ],
+    "CleanupRegistry": [
+      "HKLM:\\SOFTWARE\\7-Zip"
+    ]
+  },
+  {
+    "Name": "Notepad++",
+    "DetectionName": "Notepad++",
+    "Installer": "Installers\\NotepadPP\\notepadpp-installer.exe",
+    "Arguments": "/S",
+    "CleanupFolders": [
+      "C:\\Program Files\\Notepad++"
+    ],
+    "CleanupRegistry": [
+      "HKLM:\\SOFTWARE\\Notepad++"
+    ]
+  },
+  {
+    "Name": "Example MSI Application",
+    "DetectionName": "Example MSI Application",
+    "Installer": "Installers\\ExampleMSI\\application.msi",
+    "Arguments": "/qn /norestart",
+    "CleanupFolders": [],
+    "CleanupRegistry": []
+  },
+  {
+    "Name": "Example EXE Application",
+    "DetectionName": "Example EXE Application",
+    "Installer": "Installers\\ExampleEXE\\setup.exe",
+    "Arguments": "/quiet /norestart",
+    "CleanupFolders": [],
+    "CleanupRegistry": []
+  }
+]
